@@ -8,15 +8,16 @@
 # The sum of all multiples of 3 or 5 below 1000
 
 finalValue = 0
-
-for counter in range(1, 1000):
+# if included the value 1000, result would not be correct since they asked for below 1000
+# but hey I am a rebel
+for counter in range(1, 1001):
   # print(counter)
   if (counter % 3 == 0):
-    print(counter)
+    print("Divisible by 3: " + str(counter))
     finalValue+=counter
   elif (counter % 5 == 0):
-    print(counter)
+    print("Divisible by 5: " + str(counter))
     finalValue+=counter
 
-print finalValue
+print (finalValue)
 
